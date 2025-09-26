@@ -1,3 +1,6 @@
 # Ignore Document Files
 
 Documents
+ProbablisticGenerativeModels/PGM_Venv/
+SignalProcessing/SP_Venv/
+Stage-Progress/CityVenv/

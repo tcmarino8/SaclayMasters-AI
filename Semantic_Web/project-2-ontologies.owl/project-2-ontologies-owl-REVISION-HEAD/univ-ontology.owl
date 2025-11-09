@@ -1,0 +1,1391 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/univ-ontology#"
+     xml:base="http://example.org/univ-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:webprotege="http://webprotege.stanford.edu/"
+     xmlns:univ-ontology="http://example.org/univ-ontology#">
+    <owl:Ontology rdf:about="http://example.org/univ-ontology">
+        <rdfs:comment>An OWL ontology focused on French universities (Université Paris-Saclay, CentraleSupélec, etc.) with many student individuals.</rdfs:comment>
+        <rdfs:label>University Examination Ontology (FR Universities Edition)</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/univ-ontology#appliesForProgram -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/univ-ontology#appliesForProgram">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Program"/>
+        <rdfs:label>applies for program</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#hasExam -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/univ-ontology#hasExam">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <rdfs:label>has exam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#hasGrade -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/univ-ontology#hasGrade">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Grade"/>
+        <rdfs:label>has grade</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#paysFeesFor -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/univ-ontology#paysFeesFor">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Year"/>
+        <rdfs:label>pays fees for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#registeredIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/univ-ontology#registeredIn">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label>registered in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#sanctionedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/univ-ontology#sanctionedBy">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Jury"/>
+        <rdfs:label>sanctioned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R76FdvGfwsytFlhRlLXP5Ps -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R76FdvGfwsytFlhRlLXP5Ps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>hasPrerequisite</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Program"/>
+        <rdfs:label>is curriculum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <rdfs:label>language taught in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Program"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has program</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Jury"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <rdfs:label>positive decision</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/univ-ontology#hasExam"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y"/>
+        <rdfs:label>has final exam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8ffnaMDYI8HvjbKYgvCL0O -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R8ffnaMDYI8HvjbKYgvCL0O">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>is DS curriculum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#RegisteredStudent"/>
+        <rdfs:label>student in question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label>taught at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9pRYIfxthlnY7FPq0tsQvL -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9pRYIfxthlnY7FPq0tsQvL">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>passes course</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>qualified for course</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <rdfs:label>passed exam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Program"/>
+        <rdfs:label>is fraud case</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCUNmmdgEInzNoT5a2IGjtt -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCUNmmdgEInzNoT5a2IGjtt">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>hasCompleted</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Jury"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <rdfs:label>negative decision</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/univ-ontology#hasExam"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6"/>
+        <rdfs:label>has project</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDFfk65Cajv2mfIb33kymse -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RDFfk65Cajv2mfIb33kymse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">takesCourse</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label>finds establishment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RFTfPYsbQ9It4FMDPc8mUQ -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RFTfPYsbQ9It4FMDPc8mUQ">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>is AI curriculum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0 -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <rdfs:label>committed fraud</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/univ-ontology#ects -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/univ-ontology#ects">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>ECTS credits</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#gradeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/univ-ontology#gradeValue">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Grade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>grade value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/univ-ontology#yearsCompletedCS -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/univ-ontology#yearsCompletedCS">
+        <rdfs:domain rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>years completed in CS or related</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/univ-ontology#AdmissibleStudent -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#AdmissibleStudent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/univ-ontology#Student"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/univ-ontology#yearsCompletedCS"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Admissible Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Course -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Course">
+        <rdfs:label>Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Establishment -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Establishment">
+        <rdfs:label>Establishment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Exam -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Exam">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/univ-ontology#hasGrade"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/univ-ontology#Grade"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#FraudCase -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#FraudCase">
+        <rdfs:label>Fraud Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Grade -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Grade">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/univ-ontology#gradeValue"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Grade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Jury -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Jury">
+        <rdfs:label>Jury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#MandatoryCourse -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#MandatoryCourse">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>Mandatory Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#ModuleLiberte -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#ModuleLiberte">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#OptionalCourse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/univ-ontology#ects"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Module Liberté</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#OptionalCourse -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#OptionalCourse">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Course"/>
+        <rdfs:label>Optional Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#PassingGrade -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#PassingGrade">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/univ-ontology#Grade"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/univ-ontology#gradeValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Passing Grade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Program -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Program">
+        <rdfs:label>Program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#RegisteredStudent -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#RegisteredStudent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/univ-ontology#Student"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/univ-ontology#paysFeesFor"/>
+                        <owl:someValuesFrom rdf:resource="http://example.org/univ-ontology#Year"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/univ-ontology#registeredIn"/>
+                        <owl:someValuesFrom rdf:resource="http://example.org/univ-ontology#Establishment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Registered Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Student -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Student">
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/univ-ontology#Year -->
+
+    <owl:Class rdf:about="http://example.org/univ-ontology#Year">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Program"/>
+        <rdfs:label>Year of Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/univ-ontology#hasGrade"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/univ-ontology#Grade"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Final Exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6">
+        <rdfs:subClassOf rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/univ-ontology#hasGrade"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/univ-ontology#Grade"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv">
+        <rdfs:label>Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/univ-ontology#AlgoCS -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#AlgoCS">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#MandatoryCourse"/>
+        <hasExam rdf:resource="http://example.org/univ-ontology#ExamAlgo1"/>
+        <ects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ects>
+        <rdfs:label xml:lang="en">Algorithms and Data Structures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Amina -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Amina">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2025"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteNantes"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ML_Fundamentals"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</yearsCompletedCS>
+        <rdfs:label>Amina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Anais -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Anais">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2025"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ModuleLibDataPSaclay"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</yearsCompletedCS>
+        <rdfs:label xml:lang="fr">Anaïs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#BigDataAnalytics -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#BigDataAnalytics">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#OptionalCourse"/>
+        <webprotege:R7YUhcdmK37OtzsCjaOyvDP rdf:resource="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+        <webprotege:R9eggIVC8YIDg6wrvVcJzCG rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <ects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ects>
+        <rdfs:label xml:lang="en">Big Data Analytics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Camille -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Camille">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2025"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#SorbonneUniversite"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ML_Fundamentals"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</yearsCompletedCS>
+        <rdfs:label>Camille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#CentraleSupelec -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#CentraleSupelec">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <webprotege:R7qWjHTxenTB79B4dgZIydQ rdf:resource="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju"/>
+        <webprotege:R7qWjHTxenTB79B4dgZIydQ rdf:resource="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+        <rdfs:label xml:lang="fr">CentraleSupélec</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Chloe -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Chloe">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteLyon1"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#BigDataAnalytics"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</yearsCompletedCS>
+        <rdfs:label xml:lang="fr">Chloé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Emma -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Emma">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <webprotege:ReShI6FS10xFT7I6xWHhG0 rdf:resource="http://example.org/univ-ontology#SemanticWeb"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</yearsCompletedCS>
+        <rdfs:label>Emma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#ExamAlgo1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#ExamAlgo1">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <hasGrade rdf:resource="http://example.org/univ-ontology#Grade17"/>
+        <rdfs:label xml:lang="en">Final Exam - Algorithms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#ExamML1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#ExamML1">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <hasGrade rdf:resource="http://example.org/univ-ontology#Grade8"/>
+        <rdfs:label xml:lang="en">Final Exam - ML</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#ExamSW1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#ExamSW1">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Exam"/>
+        <hasGrade rdf:resource="http://example.org/univ-ontology#Grade14"/>
+        <rdfs:label xml:lang="en">Final Exam - Semantic Web</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Fatou -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Fatou">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#CentraleSupelec"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#SemanticWeb"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</yearsCompletedCS>
+        <rdfs:label>Fatou</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#FraudCase_SW -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#FraudCase_SW">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <sanctionedBy rdf:resource="http://example.org/univ-ontology#JuryPSaclay"/>
+        <rdfs:label xml:lang="en">Plagiarism Case - SW1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Grade14 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Grade14">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Grade"/>
+        <gradeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</gradeValue>
+        <rdfs:label>14/20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Grade17 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Grade17">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Grade"/>
+        <gradeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</gradeValue>
+        <rdfs:label>17/20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Grade8 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Grade8">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Grade"/>
+        <gradeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</gradeValue>
+        <rdfs:label>8/20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#INSA_Lyon -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#INSA_Lyon">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">INSA Lyon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Idrissa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Idrissa">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <webprotege:RCU8h0a0srLx4lEn05PfsIL rdf:resource="http://example.org/univ-ontology#ML_Fundamentals"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ML_Fundamentals"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#SemanticWeb"/>
+        <webprotege:RDN8PA9IeXWKF090k2lH4Oz rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</yearsCompletedCS>
+        <rdfs:label>Idrissa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Julien -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Julien">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteLorraine"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ML_Fundamentals"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</yearsCompletedCS>
+        <rdfs:label>Julien</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#JuryPSaclay -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#JuryPSaclay">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Jury"/>
+        <rdfs:label xml:lang="en">Paris-Saclay Jury</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Louis -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Louis">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#UniversiteGrenobleAlpes"/>
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#UniversiteLorraine"/>
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#UniversiteNantes"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteNantes"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#BigDataAnalytics"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</yearsCompletedCS>
+        <rdfs:label>Louis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Lucas -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Lucas">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteGrenobleAlpes"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ModuleLibDataPSaclay"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</yearsCompletedCS>
+        <rdfs:label>Lucas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#ML_Fundamentals -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#ML_Fundamentals">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#MandatoryCourse"/>
+        <hasExam rdf:resource="http://example.org/univ-ontology#ExamML1"/>
+        <webprotege:R7YUhcdmK37OtzsCjaOyvDP rdf:resource="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+        <webprotege:R9eggIVC8YIDg6wrvVcJzCG rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <ects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ects>
+        <rdfs:label xml:lang="en">Machine Learning Fundamentals</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Manon -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Manon">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2025"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#SemanticWeb"/>
+        <webprotege:ReShI6FS10xFT7I6xWHhG0 rdf:resource="http://example.org/univ-ontology#SemanticWeb"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</yearsCompletedCS>
+        <rdfs:label>Manon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Marie -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Marie">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteBordeaux"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#SemanticWeb"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</yearsCompletedCS>
+        <rdfs:label>Marie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Mehdi -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Mehdi">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#INSA_Lyon"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#BigDataAnalytics"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</yearsCompletedCS>
+        <rdfs:label>Mehdi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#ModuleLibDataPSaclay -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#ModuleLibDataPSaclay">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#ModuleLiberte"/>
+        <rdfs:label xml:lang="en">Module Liberté (Data-Oriented)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Nathan -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Nathan">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#INSA_Lyon"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#AlgoCS"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</yearsCompletedCS>
+        <rdfs:label>Nathan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Pierre -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Pierre">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#SorbonneUniversite"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#AlgoCS"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</yearsCompletedCS>
+        <rdfs:label>Pierre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Sarah -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Sarah">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#SorbonneUniversite"/>
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#BigDataAnalytics"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</yearsCompletedCS>
+        <rdfs:label>Sarah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#SemanticWeb -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#SemanticWeb">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#MandatoryCourse"/>
+        <hasExam rdf:resource="http://example.org/univ-ontology#ExamSW1"/>
+        <webprotege:R7YUhcdmK37OtzsCjaOyvDP rdf:resource="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+        <webprotege:R9eggIVC8YIDg6wrvVcJzCG rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <ects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ects>
+        <rdfs:label xml:lang="en">Semantic Web</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#SorbonneUniversite -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#SorbonneUniversite">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Sorbonne Université</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Thomas">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Tyler -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Tyler">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <appliesForProgram rdf:resource="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#AlgoCS"/>
+        <webprotege:RDN8PA9IeXWKF090k2lH4Oz rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</yearsCompletedCS>
+        <rdfs:label>Tyler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteBordeaux -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteBordeaux">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Université de Bordeaux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteGrenobleAlpes -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteGrenobleAlpes">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Université Grenoble Alpes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteLille -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteLille">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Université de Lille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteLorraine -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteLorraine">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Université de Lorraine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteLyon1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteLyon1">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Université Claude Bernard Lyon 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteNantes -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteNantes">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <rdfs:label xml:lang="fr">Université de Nantes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#UniversiteParisSaclay -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#UniversiteParisSaclay">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Establishment"/>
+        <webprotege:R7qWjHTxenTB79B4dgZIydQ rdf:resource="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju"/>
+        <webprotege:R7qWjHTxenTB79B4dgZIydQ rdf:resource="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+        <rdfs:label xml:lang="fr">Université Paris-Saclay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Year2024 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Year2024">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Year"/>
+        <rdfs:label>2024/2025</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Year2025 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Year2025">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Year"/>
+        <rdfs:label>2025/2026</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/univ-ontology#Youssef -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/univ-ontology#Youssef">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2024"/>
+        <registeredIn rdf:resource="http://example.org/univ-ontology#UniversiteGrenobleAlpes"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://example.org/univ-ontology#ModuleLibDataPSaclay"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</yearsCompletedCS>
+        <rdfs:label>Youssef</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7WGGijxhwVBogSuizxKVwy -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7WGGijxhwVBogSuizxKVwy">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Melissa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7wfQoRkf6MyFtXHqQuLmZD -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7wfQoRkf6MyFtXHqQuLmZD">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Alain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#MandatoryCourse"/>
+        <webprotege:R7YUhcdmK37OtzsCjaOyvDP rdf:resource="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+        <webprotege:R9eggIVC8YIDg6wrvVcJzCG rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <rdfs:label>WebofData</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <rdfs:label>English</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <rdfs:label>French</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#MandatoryCourse"/>
+        <webprotege:R7YUhcdmK37OtzsCjaOyvDP rdf:resource="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+        <webprotege:R9eggIVC8YIDg6wrvVcJzCG rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <rdfs:label>SocialGraphDataManagement</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <webprotege:R7qWjHTxenTB79B4dgZIydQ rdf:resource="http://example.org/univ-ontology#UniversiteBordeaux"/>
+        <rdfs:label>Kenichi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Course"/>
+        <webprotege:R7YUhcdmK37OtzsCjaOyvDP rdf:resource="http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4"/>
+        <webprotege:R9eggIVC8YIDg6wrvVcJzCG rdf:resource="http://example.org/univ-ontology#UniversiteParisSaclay"/>
+        <rdfs:label>Conferences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBXCxGcryTTrxEjLZk26uT6 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBXCxGcryTTrxEjLZk26uT6">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Alex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Program"/>
+        <rdfs:label>Data Science</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBfrBnJnJdqUoIk50SUolRK -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBfrBnJnJdqUoIk50SUolRK">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Marilyn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC9t3mvFrj8vgVWlWzqhuO0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RC9t3mvFrj8vgVWlWzqhuO0">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#FraudCase"/>
+        <rdfs:label>FraudCase_SGDM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#MandatoryCourse"/>
+        <rdfs:label>Artificial Intelligence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDDD9GzLhV6T9bLaIQffDOx -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDDD9GzLhV6T9bLaIQffDOx">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Faivre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDhstfwhi3y1lcNN08nxw0Y -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDhstfwhi3y1lcNN08nxw0Y">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Meiling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDxCJPY0azvVcrmY7pR04Qe -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDxCJPY0azvVcrmY7pR04Qe">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Mariam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/REObLNz2cwJdaaDTYONnKO -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/REObLNz2cwJdaaDTYONnKO">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <rdfs:label>German</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RLk7uFWGYAlWXnGYg6okiV -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RLk7uFWGYAlWXnGYg6okiV">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <rdfs:label>Victor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC">
+        <appliesForProgram rdf:resource="http://example.org/univ-ontology#SorbonneUniversite"/>
+        <paysFeesFor rdf:resource="http://example.org/univ-ontology#Year2025"/>
+        <webprotege:RDFfk65Cajv2mfIb33kymse rdf:resource="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+        <yearsCompletedCS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</yearsCompletedCS>
+        <rdfs:label>Feddy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RYGDkNiImaWezv33qZg09Y -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RYGDkNiImaWezv33qZg09Y">
+        <rdf:type rdf:resource="http://example.org/univ-ontology#Student"/>
+        <webprotege:R7qWjHTxenTB79B4dgZIydQ rdf:resource="http://example.org/univ-ontology#Year2025"/>
+        <rdfs:label>Katia</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- ========================= -->
+<!--  FRAUD MODEL EXTENSION    -->
+<!-- ========================= -->
+
+<!-- Define FraudCase hierarchy -->
+<owl:Class rdf:about="#FraudCase"/>
+<owl:Class rdf:about="#PositiveFraudCase">
+    <rdfs:subClassOf rdf:resource="#FraudCase"/>
+</owl:Class>
+<owl:Class rdf:about="#NegativeFraudCase">
+    <rdfs:subClassOf rdf:resource="#FraudCase"/>
+</owl:Class>
+
+<!-- Define properties -->
+<owl:ObjectProperty rdf:about="#hasFraudCase">
+    <rdfs:domain rdf:resource="#Student"/>
+    <rdfs:range rdf:resource="#FraudCase"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#relatedToCourse">
+    <rdfs:domain rdf:resource="#FraudCase"/>
+    <rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#fraudDate">
+    <rdfs:domain rdf:resource="#FraudCase"/>
+    <rdfs:range rdf:resource="&xsd;date"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#fraudScore">
+    <rdfs:domain rdf:resource="#FraudCase"/>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+</owl:DatatypeProperty>
+
+<!-- ========================= -->
+<!--  FRAUD INSTANCES          -->
+<!-- ========================= -->
+
+<!-- Emma: Two positive fraud cases -->
+<owl:NamedIndividual rdf:about="#emmaFraudSemanticWeb">
+    <rdf:type rdf:resource="#PositiveFraudCase"/>
+    <rdfs:label>Positive Fraud Case (Semantic Web Course)</rdfs:label>
+    <relatedToCourse rdf:resource="#SemanticWeb"/>
+    <fraudDate rdf:datatype="&xsd;date">2024-11-15</fraudDate>
+    <fraudScore rdf:datatype="&xsd;decimal">0.87</fraudScore>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#emmaFraudSocialGraph">
+    <rdf:type rdf:resource="#PositiveFraudCase"/>
+    <rdfs:label>Positive Fraud Case (Social and Graph Data Course)</rdfs:label>
+    <relatedToCourse rdf:resource="#SocialAndGraphData"/>
+    <fraudDate rdf:datatype="&xsd;date">2025-03-22</fraudDate>
+    <fraudScore rdf:datatype="&xsd;decimal">0.92</fraudScore>
+</owl:NamedIndividual>
+
+<!-- Chloe: One negative fraud case -->
+<owl:NamedIndividual rdf:about="#chloeFraudNegative">
+    <rdf:type rdf:resource="#NegativeFraudCase"/>
+    <rdfs:label>Negative Fraud Case (No confirmed fraud)</rdfs:label>
+    <fraudDate rdf:datatype="&xsd;date">2025-02-10</fraudDate>
+    <fraudScore rdf:datatype="&xsd;decimal">0.15</fraudScore>
+</owl:NamedIndividual>
+
+<!-- ========================= -->
+<!--  LINKS TO STUDENTS        -->
+<!-- ========================= -->
+
+<owl:NamedIndividual rdf:about="#Emma">
+    <hasFraudCase rdf:resource="#emmaFraudSemanticWeb"/>
+    <hasFraudCase rdf:resource="#emmaFraudSocialGraph"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chloe">
+    <hasFraudCase rdf:resource="#chloeFraudNegative"/>
+</owl:NamedIndividual>
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,2196 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/univ-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/univ-ontology">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An OWL ontology focused on French universities (Université Paris-Saclay, CentraleSupélec, etc.) with many student individuals.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>University Examination Ontology (FR Universities Edition)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AdmissibleStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Establishment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FraudCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandatoryCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModuleLiberte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OptionalCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PassingGrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegisteredStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesForProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followsCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#paysFeesFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#registeredIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sanctionedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8ffnaMDYI8HvjbKYgvCL0O"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9pRYIfxthlnY7FPq0tsQvL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDY5tw7NxKu3jJd7UyVSVpJ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RFTfPYsbQ9It4FMDPc8mUQ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ects"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gradeValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yearsCompletedCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thomas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7WGGijxhwVBogSuizxKVwy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7wfQoRkf6MyFtXHqQuLmZD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBXCxGcryTTrxEjLZk26uT6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfrBnJnJdqUoIk50SUolRK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC9t3mvFrj8vgVWlWzqhuO0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDDD9GzLhV6T9bLaIQffDOx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDhstfwhi3y1lcNN08nxw0Y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDxCJPY0azvVcrmY7pR04Qe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/REObLNz2cwJdaaDTYONnKO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RLk7uFWGYAlWXnGYg6okiV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RYGDkNiImaWezv33qZg09Y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JuryPSaclay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteGrenobleAlpes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModuleLibDataPSaclay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grade17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CentraleSupelec"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamAlgo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grade14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamSW1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nathan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Idrissa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camille"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteLorraine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lucas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteLyon1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteBordeaux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Youssef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anais"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SorbonneUniversite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteLille"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Julien"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sarah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FraudCase_SW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pierre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chloe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grade8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INSA_Lyon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mehdi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Year2025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Year2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteNantes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tyler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Louis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlgoCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamML1"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AdmissibleStudent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Student"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#yearsCompletedCS"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PassingGrade"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Grade"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#gradeValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:decimal"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RegisteredStudent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Student"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#paysFeesFor"/>
+                <Class IRI="#Year"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#registeredIn"/>
+                <Class IRI="#Establishment"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Exam"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGrade"/>
+            <Class IRI="#Grade"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grade"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grade"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#gradeValue"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandatoryCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModuleLiberte"/>
+        <Class IRI="#OptionalCourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModuleLiberte"/>
+        <DataHasValue>
+            <DataProperty IRI="#ects"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OptionalCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#followsCourse"/>
+            <Class IRI="#ModuleLiberte"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#Program"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y"/>
+        <Class IRI="#Exam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGrade"/>
+            <Class IRI="#Grade"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6"/>
+        <Class IRI="#Exam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGrade"/>
+            <Class IRI="#Grade"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#MandatoryCourse"/>
+        <NamedIndividual IRI="#AlgoCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Amina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Anais"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OptionalCourse"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Camille"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#CentraleSupelec"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Chloe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exam"/>
+        <NamedIndividual IRI="#ExamAlgo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exam"/>
+        <NamedIndividual IRI="#ExamML1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exam"/>
+        <NamedIndividual IRI="#ExamSW1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Fatou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FraudCase"/>
+        <NamedIndividual IRI="#FraudCase_SW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grade"/>
+        <NamedIndividual IRI="#Grade14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grade"/>
+        <NamedIndividual IRI="#Grade17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grade"/>
+        <NamedIndividual IRI="#Grade8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#INSA_Lyon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Idrissa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Julien"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jury"/>
+        <NamedIndividual IRI="#JuryPSaclay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Louis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Lucas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MandatoryCourse"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Manon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Marie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Mehdi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleLiberte"/>
+        <NamedIndividual IRI="#ModuleLibDataPSaclay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Nathan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Pierre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Sarah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MandatoryCourse"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#SorbonneUniversite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Thomas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Tyler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteBordeaux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteGrenobleAlpes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteLille"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteLorraine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteLyon1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteNantes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Establishment"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Year"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Year"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Youssef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7WGGijxhwVBogSuizxKVwy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7wfQoRkf6MyFtXHqQuLmZD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MandatoryCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MandatoryCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBXCxGcryTTrxEjLZk26uT6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfrBnJnJdqUoIk50SUolRK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FraudCase"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RC9t3mvFrj8vgVWlWzqhuO0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MandatoryCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDDD9GzLhV6T9bLaIQffDOx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDhstfwhi3y1lcNN08nxw0Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDxCJPY0azvVcrmY7pR04Qe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/REObLNz2cwJdaaDTYONnKO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RLk7uFWGYAlWXnGYg6okiV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RYGDkNiImaWezv33qZg09Y"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExam"/>
+        <NamedIndividual IRI="#AlgoCS"/>
+        <NamedIndividual IRI="#ExamAlgo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Amina"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Amina"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Amina"/>
+        <NamedIndividual IRI="#UniversiteNantes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Anais"/>
+        <NamedIndividual IRI="#ModuleLibDataPSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Anais"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Anais"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Camille"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Camille"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Camille"/>
+        <NamedIndividual IRI="#SorbonneUniversite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <NamedIndividual IRI="#CentraleSupelec"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <NamedIndividual IRI="#CentraleSupelec"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Chloe"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Chloe"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Chloe"/>
+        <NamedIndividual IRI="#UniversiteLyon1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGrade"/>
+        <NamedIndividual IRI="#ExamAlgo1"/>
+        <NamedIndividual IRI="#Grade17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGrade"/>
+        <NamedIndividual IRI="#ExamML1"/>
+        <NamedIndividual IRI="#Grade8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGrade"/>
+        <NamedIndividual IRI="#ExamSW1"/>
+        <NamedIndividual IRI="#Grade14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Fatou"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Fatou"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Fatou"/>
+        <NamedIndividual IRI="#CentraleSupelec"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sanctionedBy"/>
+        <NamedIndividual IRI="#FraudCase_SW"/>
+        <NamedIndividual IRI="#JuryPSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx"/>
+        <NamedIndividual IRI="#FraudCase_SW"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Julien"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Julien"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Julien"/>
+        <NamedIndividual IRI="#UniversiteLorraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Louis"/>
+        <NamedIndividual IRI="#UniversiteGrenobleAlpes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Louis"/>
+        <NamedIndividual IRI="#UniversiteLorraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Louis"/>
+        <NamedIndividual IRI="#UniversiteNantes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Louis"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Louis"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Louis"/>
+        <NamedIndividual IRI="#UniversiteNantes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <NamedIndividual IRI="#ModuleLibDataPSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <NamedIndividual IRI="#UniversiteGrenobleAlpes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExam"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+        <NamedIndividual IRI="#ExamML1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Manon"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Manon"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Manon"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0"/>
+        <NamedIndividual IRI="#Manon"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Marie"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Marie"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Marie"/>
+        <NamedIndividual IRI="#UniversiteBordeaux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Mehdi"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Mehdi"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Mehdi"/>
+        <NamedIndividual IRI="#INSA_Lyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Nathan"/>
+        <NamedIndividual IRI="#AlgoCS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Nathan"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Nathan"/>
+        <NamedIndividual IRI="#INSA_Lyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Pierre"/>
+        <NamedIndividual IRI="#AlgoCS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Pierre"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Pierre"/>
+        <NamedIndividual IRI="#SorbonneUniversite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Sarah"/>
+        <NamedIndividual IRI="#SorbonneUniversite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Sarah"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Sarah"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Sarah"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Sarah"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExam"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+        <NamedIndividual IRI="#ExamSW1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="#Tyler"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Tyler"/>
+        <NamedIndividual IRI="#AlgoCS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Tyler"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Tyler"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+        <NamedIndividual IRI="#Tyler"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="#Youssef"/>
+        <NamedIndividual IRI="#ModuleLibDataPSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="#Youssef"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#registeredIn"/>
+        <NamedIndividual IRI="#Youssef"/>
+        <NamedIndividual IRI="#UniversiteGrenobleAlpes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDY5tw7NxKu3jJd7UyVSVpJ"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp"/>
+        <NamedIndividual IRI="#UniversiteBordeaux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n"/>
+        <NamedIndividual IRI="#UniversiteParisSaclay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC"/>
+        <NamedIndividual IRI="#SorbonneUniversite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsCourse"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RYGDkNiImaWezv33qZg09Y"/>
+        <NamedIndividual IRI="#Year2025"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ects"/>
+        <NamedIndividual IRI="#AlgoCS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Amina"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Anais"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ects"/>
+        <NamedIndividual IRI="#BigDataAnalytics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Camille"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Chloe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Emma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Fatou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gradeValue"/>
+        <NamedIndividual IRI="#Grade14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gradeValue"/>
+        <NamedIndividual IRI="#Grade17"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gradeValue"/>
+        <NamedIndividual IRI="#Grade8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Idrissa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Julien"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Louis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ects"/>
+        <NamedIndividual IRI="#ML_Fundamentals"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Manon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Marie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Mehdi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Nathan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Pierre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Sarah"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ects"/>
+        <NamedIndividual IRI="#SemanticWeb"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Tyler"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="#Youssef"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGrade"/>
+        <ObjectProperty IRI="#followsCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sanctionedBy"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb"/>
+        <ObjectProperty IRI="#hasExam"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8ffnaMDYI8HvjbKYgvCL0O"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9pRYIfxthlnY7FPq0tsQvL"/>
+        <ObjectProperty IRI="#followsCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ"/>
+        <ObjectProperty IRI="#followsCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL"/>
+        <ObjectProperty IRI="#followsCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi"/>
+        <ObjectProperty IRI="#hasExam"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDY5tw7NxKu3jJd7UyVSVpJ"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RFTfPYsbQ9It4FMDPc8mUQ"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0"/>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followsCourse"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExam"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGrade"/>
+        <Class IRI="#Exam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#registeredIn"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sanctionedBy"/>
+        <Class IRI="#FraudCase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <Class IRI="#Establishment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd"/>
+        <Class IRI="#Jury"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8ffnaMDYI8HvjbKYgvCL0O"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx"/>
+        <Class IRI="#FraudCase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <Class IRI="#FraudCase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a"/>
+        <Class IRI="#Jury"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDY5tw7NxKu3jJd7UyVSVpJ"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RFTfPYsbQ9It4FMDPc8mUQ"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <Class IRI="#Establishment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesForProgram"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followsCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExam"/>
+        <Class IRI="#Exam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGrade"/>
+        <Class IRI="#Grade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#paysFeesFor"/>
+        <Class IRI="#Year"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#registeredIn"/>
+        <Class IRI="#Establishment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sanctionedBy"/>
+        <Class IRI="#Jury"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP"/>
+        <Class IRI="http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd"/>
+        <Class IRI="#FraudCase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb"/>
+        <Class IRI="http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx"/>
+        <Class IRI="#RegisteredStudent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG"/>
+        <Class IRI="#Establishment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL"/>
+        <Class IRI="#Exam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a"/>
+        <Class IRI="#FraudCase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi"/>
+        <Class IRI="http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz"/>
+        <Class IRI="#Establishment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDY5tw7NxKu3jJd7UyVSVpJ"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0"/>
+        <Class IRI="#Exam"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ects"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gradeValue"/>
+        <Class IRI="#Grade"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ects"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gradeValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yearsCompletedCS"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AdmissibleStudent</IRI>
+        <Literal>Admissible Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AlgoCS</IRI>
+        <Literal xml:lang="en">Algorithms and Data Structures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Amina</IRI>
+        <Literal>Amina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Anais</IRI>
+        <Literal xml:lang="fr">Anaïs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BigDataAnalytics</IRI>
+        <Literal xml:lang="en">Big Data Analytics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Camille</IRI>
+        <Literal>Camille</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CentraleSupelec</IRI>
+        <Literal xml:lang="fr">CentraleSupélec</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chloe</IRI>
+        <Literal xml:lang="fr">Chloé</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Course</IRI>
+        <Literal>Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Emma</IRI>
+        <Literal>Emma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Establishment</IRI>
+        <Literal>Establishment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Exam</IRI>
+        <Literal>Exam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExamAlgo1</IRI>
+        <Literal xml:lang="en">Final Exam - Algorithms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExamML1</IRI>
+        <Literal xml:lang="en">Final Exam - ML</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExamSW1</IRI>
+        <Literal xml:lang="en">Final Exam - Semantic Web</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fatou</IRI>
+        <Literal>Fatou</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FraudCase</IRI>
+        <Literal>Fraud Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FraudCase_SW</IRI>
+        <Literal xml:lang="en">Plagiarism Case - SW1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grade</IRI>
+        <Literal>Grade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grade14</IRI>
+        <Literal>14/20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grade17</IRI>
+        <Literal>17/20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grade8</IRI>
+        <Literal>8/20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#INSA_Lyon</IRI>
+        <Literal xml:lang="fr">INSA Lyon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Idrissa</IRI>
+        <Literal>Idrissa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Julien</IRI>
+        <Literal>Julien</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Jury</IRI>
+        <Literal>Jury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JuryPSaclay</IRI>
+        <Literal xml:lang="en">Paris-Saclay Jury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Louis</IRI>
+        <Literal>Louis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lucas</IRI>
+        <Literal>Lucas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ML_Fundamentals</IRI>
+        <Literal xml:lang="en">Machine Learning Fundamentals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MandatoryCourse</IRI>
+        <Literal>Mandatory Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manon</IRI>
+        <Literal>Manon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Marie</IRI>
+        <Literal>Marie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mehdi</IRI>
+        <Literal>Mehdi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModuleLibDataPSaclay</IRI>
+        <Literal xml:lang="en">Module Liberté (Data-Oriented)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModuleLiberte</IRI>
+        <Literal>Module Liberté</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nathan</IRI>
+        <Literal>Nathan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OptionalCourse</IRI>
+        <Literal>Optional Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PassingGrade</IRI>
+        <Literal>Passing Grade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pierre</IRI>
+        <Literal>Pierre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Program</IRI>
+        <Literal>Program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RegisteredStudent</IRI>
+        <Literal>Registered Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sarah</IRI>
+        <Literal>Sarah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticWeb</IRI>
+        <Literal xml:lang="en">Semantic Web</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SorbonneUniversite</IRI>
+        <Literal xml:lang="fr">Sorbonne Université</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Student</IRI>
+        <Literal>Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tyler</IRI>
+        <Literal>Tyler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteBordeaux</IRI>
+        <Literal xml:lang="fr">Université de Bordeaux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteGrenobleAlpes</IRI>
+        <Literal xml:lang="fr">Université Grenoble Alpes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteLille</IRI>
+        <Literal xml:lang="fr">Université de Lille</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteLorraine</IRI>
+        <Literal xml:lang="fr">Université de Lorraine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteLyon1</IRI>
+        <Literal xml:lang="fr">Université Claude Bernard Lyon 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteNantes</IRI>
+        <Literal xml:lang="fr">Université de Nantes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UniversiteParisSaclay</IRI>
+        <Literal xml:lang="fr">Université Paris-Saclay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year</IRI>
+        <Literal>Year of Study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year2024</IRI>
+        <Literal>2024/2025</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year2025</IRI>
+        <Literal>2025/2026</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Youssef</IRI>
+        <Literal>Youssef</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesForProgram</IRI>
+        <Literal>applies for program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ects</IRI>
+        <Literal>ECTS credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#followsCourse</IRI>
+        <Literal>follows course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#gradeValue</IRI>
+        <Literal>grade value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasExam</IRI>
+        <Literal>has exam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGrade</IRI>
+        <Literal>has grade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#paysFeesFor</IRI>
+        <Literal>pays fees for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#registeredIn</IRI>
+        <Literal>registered in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sanctionedBy</IRI>
+        <Literal>sanctioned by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#yearsCompletedCS</IRI>
+        <Literal>years completed in CS or related</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R70wPn47Pj1ZI7iTJnUrD3y</IRI>
+        <Literal>Final Exam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R78qzNFru1u2b8Ur2MpuXcf</IRI>
+        <Literal>is curriculum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7WGGijxhwVBogSuizxKVwy</IRI>
+        <Literal>Melissa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7YUhcdmK37OtzsCjaOyvDP</IRI>
+        <Literal>language taught in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7qWjHTxenTB79B4dgZIydQ</IRI>
+        <Literal>has program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7wfQoRkf6MyFtXHqQuLmZD</IRI>
+        <Literal>Alain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8CMGUPPFr2iuVdx13FsVmd</IRI>
+        <Literal>positive decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8OmEWGySZtgTNCzsULW5Sb</IRI>
+        <Literal>has final exam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8VAyvGK6tq7BPoGkK4sveK</IRI>
+        <Literal>WebofData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8ffnaMDYI8HvjbKYgvCL0O</IRI>
+        <Literal>is DS curriculum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8i9MIZfBDbBcUmAqxgaBRx</IRI>
+        <Literal>student in question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8ppygEA2nkWM7SGNgLZjpZ</IRI>
+        <Literal>English</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9DO8T83Y60MjRartF4l8c4</IRI>
+        <Literal>French</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9U4HYZjhjM4LrQ8hucCLf6</IRI>
+        <Literal>Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9eggIVC8YIDg6wrvVcJzCG</IRI>
+        <Literal>taught at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9lJy40l9pm3IeZgQjLtdBE</IRI>
+        <Literal>SocialGraphDataManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9pRYIfxthlnY7FPq0tsQvL</IRI>
+        <Literal>passes course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9til9xDyER40osNoYWwShp</IRI>
+        <Literal>Kenichi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9uSlsvS01IkaZuN1HF0I8n</IRI>
+        <Literal>Conferences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBP1eEKNV5X70qQOb3669pZ</IRI>
+        <Literal>qualified for course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBXCxGcryTTrxEjLZk26uT6</IRI>
+        <Literal>Alex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBd5owtLaIUMcWd8b4VhJju</IRI>
+        <Literal>Data Science</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBfrBnJnJdqUoIk50SUolRK</IRI>
+        <Literal>Marilyn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RC9t3mvFrj8vgVWlWzqhuO0</IRI>
+        <Literal>FraudCase_SGDM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCU8h0a0srLx4lEn05PfsIL</IRI>
+        <Literal>passed exam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCU8kTgQMEFMQJLxZsJTYGv</IRI>
+        <Literal>is fraud case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCfHYvse7K8GtdNyVmnWanx</IRI>
+        <Literal>Artificial Intelligence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCk8u7oF9vC4Kh63LX3Zi9a</IRI>
+        <Literal>negative decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCq6ZTOPor3dVUf2QTEtvvi</IRI>
+        <Literal>has project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDDD9GzLhV6T9bLaIQffDOx</IRI>
+        <Literal>Faivre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDN8PA9IeXWKF090k2lH4Oz</IRI>
+        <Literal>finds establishment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDY5tw7NxKu3jJd7UyVSVpJ</IRI>
+        <Literal>prerequisite course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDhstfwhi3y1lcNN08nxw0Y</IRI>
+        <Literal>Meiling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDxCJPY0azvVcrmY7pR04Qe</IRI>
+        <Literal>Mariam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/REObLNz2cwJdaaDTYONnKO</IRI>
+        <Literal>German</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RFTfPYsbQ9It4FMDPc8mUQ</IRI>
+        <Literal>is AI curriculum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RLk7uFWGYAlWXnGYg6okiV</IRI>
+        <Literal>Victor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RMcmGw0t5hJkgmaVtO3pZC</IRI>
+        <Literal>Feddy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RTLpAKHEyWyGGe4fTfazPv</IRI>
+        <Literal>Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RYGDkNiImaWezv33qZg09Y</IRI>
+        <Literal>Katia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/ReShI6FS10xFT7I6xWHhG0</IRI>
+        <Literal>committed fraud</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

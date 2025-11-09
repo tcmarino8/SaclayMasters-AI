@@ -1,12 +1,7 @@
 # Ignore Document Files
 
 Documents
-<<<<<<< HEAD
 ProbablisticGenerativeModels/PGM_Venv/
 SignalProcessing/SP_Venv/
 Stage-Progress/CityVenv/
-=======
-Stage-Progress/CityVenv/
-SignalProcessing/SP_Venv/
-ProbablisticGenerativeModels/PGM_Venv/
->>>>>>> 4012031 (trying to push)
+ComputerVision/Venv_CV/
